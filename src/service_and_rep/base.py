@@ -1,7 +1,8 @@
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, update, delete
-from typing import TypeVar, Generic, Type, Optional, List, Dict, Any
+from sqlalchemy import select
+from typing import TypeVar, Generic, Type, Optional, List
 from pydantic import BaseModel
+import uuid
 
 ModelType = TypeVar("ModelType")
 CreateSchemaType = TypeVar("CreateSchemaType", bound=BaseModel)
@@ -16,8 +17,10 @@ class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         result = await self.db.execute(select(self.model))
         return result.scalars().all()
 
-    async def get_by_id(self, obj_id: int) -> Optional[ModelType]:
-        result = await self.db.execute(select(self.model).where(self.model.id == obj_id))
+    async def get_by_id(self, obj_id: uuid.UUID) -> Optional[ModelType]:
+        result = await self.db.execute(
+            select(self.model).where(self.model.id == obj_id)
+        )
         return result.scalar_one_or_none()
 
     async def create(self, data: CreateSchemaType) -> ModelType:
@@ -27,7 +30,7 @@ class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         await self.db.refresh(instance)
         return instance
 
-    async def update(self, obj_id: int, data: UpdateSchemaType) -> Optional[ModelType]:
+    async def update(self, obj_id: uuid.UUID, data: UpdateSchemaType) -> Optional[ModelType]:
         instance = await self.get_by_id(obj_id)
         if not instance:
             return None
@@ -37,7 +40,7 @@ class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         await self.db.refresh(instance)
         return instance
 
-    async def delete(self, obj_id: int) -> bool:
+    async def delete(self, obj_id: uuid.UUID) -> bool:
         instance = await self.get_by_id(obj_id)
         if not instance:
             return False
