@@ -18,19 +18,18 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(
-    title="HR Management API",
+    title="MilReg API",
     version="1.0.0",
     lifespan=lifespan
 )
 
-# --- Настройка CORS ---
+# CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],                       # Разрешить все источники (для разработки)
-    #allow_origins=settings.CORS_ORIGINS or ["*"], # Для прода
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],                       # Разрешить все HTTP-методы
-    allow_headers=["*"],                       # Разрешить все заголовки
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Подключение роутеров
@@ -44,4 +43,4 @@ app.include_router(passport_router)
 
 @app.get("/")
 async def root():
-    return {"message": "HR Management API is running"}
+    return {"message": "MilReg API is running"}
