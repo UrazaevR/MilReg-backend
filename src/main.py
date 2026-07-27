@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from src.routers import (
     department_router,
@@ -22,6 +23,17 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+# --- Настройка CORS ---
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],                       # Разрешить все источники (для разработки)
+    #allow_origins=settings.CORS_ORIGINS or ["*"], # Для прода
+    allow_credentials=True,
+    allow_methods=["*"],                       # Разрешить все HTTP-методы
+    allow_headers=["*"],                       # Разрешить все заголовки
+)
+
+# Подключение роутеров
 app.include_router(department_router)
 app.include_router(staffing_router)
 app.include_router(person_router)

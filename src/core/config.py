@@ -9,6 +9,7 @@ class Settings:
     DB_USER: str = os.getenv("DB_USER", "postgres")
     DB_PASS: str = os.getenv("DB_PASS", "postgres")
     DB_NAME: str = os.getenv("DB_NAME", "postgres")
+    CORS_ORIGINS: list = os.getenv("CORS_ORIGINS", "").split(",") if os.getenv("CORS_ORIGINS") else []
 
     @property
     def DATABASE_URL(self) -> str:
