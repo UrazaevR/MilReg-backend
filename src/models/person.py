@@ -1,7 +1,6 @@
 from sqlalchemy import Column, String, Date, ForeignKey, Boolean, DateTime, func
 from sqlalchemy.orm import relationship
-from src.core.database import Base
-from src.core.database import UUID
+from src.core.database import Base, UUID
 import uuid
 
 class Person(Base):
@@ -12,24 +11,37 @@ class Person(Base):
     name = Column(String(256), nullable=False)
     middle_name = Column(String(256))
     birth_day = Column(Date, nullable=False)
-    sex = Column(String(256))  # OKIN_01
-    citizenship = Column(String(256))  # OKIN_02
-    education_level = Column(String(256), nullable=False)  # OKIN_30
-    main_profession = Column(String(256))  # OKPDTR_CODE
-    other_profession = Column(String(256))  # OKPDTR_CODE
-    family_status = Column(String(256))  # OKIN_10
+
+    # Внешние ключи на справочники
+    sex_id = Column(UUID, ForeignKey("okin_01.id", ondelete="SET NULL"), nullable=True)
+    citizenship_id = Column(UUID, ForeignKey("okin_02.id", ondelete="SET NULL"), nullable=True)
+    # src/models/person.py
+    education_level_id = Column(UUID, ForeignKey("okin_30.id", ondelete="SET NULL"), nullable=True)
+    main_profession_id = Column(UUID, ForeignKey("okpdtr.id", ondelete="SET NULL"), nullable=True)
+    other_profession_id = Column(UUID, ForeignKey("okpdtr.id", ondelete="SET NULL"), nullable=True)
+    family_status_id = Column(UUID, ForeignKey("okin_10.id", ondelete="SET NULL"), nullable=True)
+
     inn = Column(String(256))
     inn_issue_date = Column(Date)
     snils = Column(String(256))
     snils_issue_date = Column(Date)
-    is_training = Column(Boolean, default=True)  # Новое поле
+    is_training = Column(Boolean, default=True)
     staff_table_id = Column(UUID, ForeignKey("staffing_table.id", ondelete="SET NULL"))
-    
+    okato_id = Column(UUID, ForeignKey("okato.id", ondelete="SET NULL"), nullable=True)
+
     created_at = Column(DateTime, server_default=func.now())
     updated_at = Column(DateTime, onupdate=func.now())
 
     # Связи
+    okato = relationship("OKATO", back_populates="persons")
     staffing = relationship("StaffingTable", back_populates="persons")
+    sex = relationship("OIN_01")
+    citizenship = relationship("OIN_02")
+    family_status = relationship("OIN_10")
+    education_level = relationship("OIN_30")
+    main_profession = relationship("OKPDTR", foreign_keys=[main_profession_id])
+    other_profession = relationship("OKPDTR", foreign_keys=[other_profession_id])
+
     drivers_licenses = relationship("DriversLicense", back_populates="person", cascade="all, delete-orphan")
     education_docs = relationship("EducationDoc", back_populates="person", cascade="all, delete-orphan")
     languages = relationship("Language", back_populates="person", cascade="all, delete-orphan")

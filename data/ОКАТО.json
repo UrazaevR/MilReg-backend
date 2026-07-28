@@ -1,0 +1,1089 @@
+{"creationDate":"2026-07-28T01:54:21.476332919+03:00","classifier" : {
+  "code" : "PGS_MilReg_RegionRF",
+  "name" : "Справочник ОКАТО регионов Российской Федерации",
+  "uid" : "b4fb1036-9390-4c45-a92e-d578d550d270",
+  "version" : 7,
+  "publicId" : "01-10850",
+  "techName" : "dr_b4fb103693904c45a92ed578d550d270",
+  "updatePeriod" : 90,
+  "attributes" : [ {
+    "type" : "STRING",
+    "uid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+    "name" : "OKATO",
+    "required" : true,
+    "autoFill" : false,
+    "techName" : "f_4963c57cc5fb43b3bddafa8ff13c0a81",
+    "unique" : false,
+    "length" : 255,
+    "checkObscene" : true,
+    "checkOrthography" : false,
+    "autoKeyPartNum" : "1"
+  }, {
+    "type" : "STRING",
+    "uid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+    "name" : "REGION_NAME",
+    "required" : true,
+    "autoFill" : false,
+    "techName" : "f_0e9efca0bd544de0b694af6a5f381c9c",
+    "unique" : false,
+    "length" : 255,
+    "checkObscene" : true,
+    "checkOrthography" : false
+  }, {
+    "type" : "STRING",
+    "uid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+    "name" : "autokey",
+    "required" : true,
+    "autoFill" : false,
+    "techName" : "autokey",
+    "unique" : true,
+    "checkObscene" : false,
+    "checkOrthography" : false
+  } ],
+  "revisionTimestamp" : "2026-06-24T11:20:25.965145Z",
+  "keyAttributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+  "description" : "",
+  "type" : "SIMPLE",
+  "autoDelivery" : true,
+  "epguConstraints" : false,
+  "needApprove" : false,
+  "signable" : false,
+  "datamarted" : false
+},
+"data" : {
+  "classifierUid" : "b4fb1036-9390-4c45-a92e-d578d550d270",
+  "records" : [ {
+    "uid" : "fd6dd204-2553-47f0-9626-7659c834f9ea",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Новосибирская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_50000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "50000000000"
+    } ]
+  }, {
+    "uid" : "8c351fae-3d5b-48f7-bf08-8cbdea12303f",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Архангельская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_11000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "11000000000"
+    } ]
+  }, {
+    "uid" : "f1204651-20ad-497d-9d47-4ee051fb1d11",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Владимирская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_17000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "17000000000"
+    } ]
+  }, {
+    "uid" : "520038b2-dde4-4a4f-b6d2-0db182d5feca",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Волгоградская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_18000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "18000000000"
+    } ]
+  }, {
+    "uid" : "41735784-889d-4ee2-a933-0bbc0451effd",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Саратовская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_63000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "63000000000"
+    } ]
+  }, {
+    "uid" : "cff03920-48d1-4bbb-90c4-9d1cda467846",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Тверская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_28000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "28000000000"
+    } ]
+  }, {
+    "uid" : "397eb50f-3634-4710-89a7-1493dd09bccd",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Челябинская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_75000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "75000000000"
+    } ]
+  }, {
+    "uid" : "891ce6f7-b072-4e97-b951-da3b11b70fba",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Пензенская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_56000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "56000000000"
+    } ]
+  }, {
+    "uid" : "c2ad8226-61c2-4f5b-a072-4bbc777ee9c8",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Чеченская Республика"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_96000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "96000000000"
+    } ]
+  }, {
+    "uid" : "e9835aa6-10c5-4a2d-a09b-fc43b46f4c88",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Сахалинская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_64000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "64000000000"
+    } ]
+  }, {
+    "uid" : "ecca24d0-edb6-4b39-a973-99b02ddc6ad3",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Тыва"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_93000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "93000000000"
+    } ]
+  }, {
+    "uid" : "6d2faae6-5e96-4892-9412-ff93ca4f4ad6",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Карачаево-Черкесская Республика"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_91000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "91000000000"
+    } ]
+  }, {
+    "uid" : "d40c9271-5f5f-40aa-9e3a-c8499477d8c0",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Адыгея (Адыгея)"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_79000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "79000000000"
+    } ]
+  }, {
+    "uid" : "a540ff54-3592-41d4-9a70-fea40b00432b",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Мурманская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_47000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "47000000000"
+    } ]
+  }, {
+    "uid" : "5b0e66b7-5483-4edd-84f7-3ea44aa6eddf",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Приморский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_05000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "05000000000"
+    } ]
+  }, {
+    "uid" : "828f07b7-67b6-497e-8360-c0f26e51d359",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Тамбовская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_68000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "68000000000"
+    } ]
+  }, {
+    "uid" : "8dab6b62-c743-49ba-8d13-b66240e6b6a4",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ивановская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_24000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "24000000000"
+    } ]
+  }, {
+    "uid" : "3da18077-dc70-4adb-b38a-17ee56ec947f",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Калининградская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_27000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "27000000000"
+    } ]
+  }, {
+    "uid" : "121326b7-03d8-42d4-b59c-a037b69cc185",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Томская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_69000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "69000000000"
+    } ]
+  }, {
+    "uid" : "b02cf104-c35e-4e24-ae56-b764c0bb9f78",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Калужская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_29000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "29000000000"
+    } ]
+  }, {
+    "uid" : "061b6226-7775-4e8d-9203-e0501ff0585c",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Кабардино-Балкарская Республика"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_83000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "83000000000"
+    } ]
+  }, {
+    "uid" : "f8438867-c731-4962-b5a2-b2c44038e490",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Санкт-Петербург"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_40000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "40000000000"
+    } ]
+  }, {
+    "uid" : "7639121f-ab3e-4b7b-929c-bb07164ca863",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Курская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_38000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "38000000000"
+    } ]
+  }, {
+    "uid" : "9e56f9d7-6db6-4d0e-81a1-33be21532746",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Рязанская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_61000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "61000000000"
+    } ]
+  }, {
+    "uid" : "bd3f78ff-92e9-4915-947a-6cef6f06bdd0",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Алтай"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_84000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "84000000000"
+    } ]
+  }, {
+    "uid" : "2d060afa-b3c7-4cbe-b16c-0b1cfecc2a6d",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ненецкий автономный округ"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_11100000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "11100000000"
+    } ]
+  }, {
+    "uid" : "a9f35c26-295f-4b5d-af75-1a82ed9b0b26",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Кемеровская область - Кузбасс"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_32000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "32000000000"
+    } ]
+  }, {
+    "uid" : "ec8e8d57-52aa-46ba-835b-24bc561073f3",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ульяновская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_73000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "73000000000"
+    } ]
+  }, {
+    "uid" : "2f1dcad6-e004-4a55-94ba-d8c56b7b3c17",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Красноярский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_04000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "04000000000"
+    } ]
+  }, {
+    "uid" : "c3c17d47-cf9e-4f0a-a595-2fb0a7c29b51",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ямало-Ненецкий автономный округ"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_71140000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "71140000000"
+    } ]
+  }, {
+    "uid" : "233767dd-919b-4c4b-92b4-9d0c8476f635",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Северная Осетия-Алания"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_90000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "90000000000"
+    } ]
+  }, {
+    "uid" : "c4ef69c2-aeef-439d-8dd8-768e44dfc81c",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Чувашская Республика - Чувашия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_97000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "97000000000"
+    } ]
+  }, {
+    "uid" : "9a53fd5b-b84c-4c5f-b348-60fe2b55b0c6",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Башкортостан"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_80000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "80000000000"
+    } ]
+  }, {
+    "uid" : "c021653c-9c3d-4f53-8297-a68383546c79",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Нижегородская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_22000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "22000000000"
+    } ]
+  }, {
+    "uid" : "b08ad3f1-925e-418b-9c83-795c0e79dcea",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Алтайский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_01000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "01000000000"
+    } ]
+  }, {
+    "uid" : "2bde0797-5093-4af3-9a51-8093414077ec",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ханты-Мансийский автономный округ - Югра"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_71100000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "71100000000"
+    } ]
+  }, {
+    "uid" : "af44c526-2b7f-419e-a548-f4a5a9589b97",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Дагестан"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_82000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "82000000000"
+    } ]
+  }, {
+    "uid" : "40e84aeb-9466-451d-939c-6cca845251e0",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Хакасия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_95000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "95000000000"
+    } ]
+  }, {
+    "uid" : "bb2d9ebb-35b3-40f0-82f1-652eff7c7385",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ярославская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_78000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "78000000000"
+    } ]
+  }, {
+    "uid" : "3a1cfeb9-de07-477d-a3d9-d687bfa49d3f",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Пермский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_57000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "57000000000"
+    } ]
+  }, {
+    "uid" : "38ea29f4-dbf2-4272-ac77-2f2a4f1a0ee8",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Воронежская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_20000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "20000000000"
+    } ]
+  }, {
+    "uid" : "ef6ad473-0dc9-4e4d-846d-58d9ec97a803",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ставропольский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_07000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "07000000000"
+    } ]
+  }, {
+    "uid" : "60b5e51e-1b87-4f71-b88c-a911d982146b",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Татарстан (Татарстан)"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_92000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "92000000000"
+    } ]
+  }, {
+    "uid" : "fd02287e-e80e-4ae1-a2ed-82e4448d680f",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Свердловская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_65000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "65000000000"
+    } ]
+  }, {
+    "uid" : "fdb52f5c-619e-4d19-8b26-c12f4917c89d",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Федеральная территория \"Сириус\""
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_02000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "02000000000"
+    } ]
+  }, {
+    "uid" : "786acf6b-a7e3-4a06-8f07-b09d21bbcde3",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Карелия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_86000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "86000000000"
+    } ]
+  }, {
+    "uid" : "a3f59fff-4b8a-4422-9ccc-899da4c3e409",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Московская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_46000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "46000000000"
+    } ]
+  }, {
+    "uid" : "61ddf1f4-a5e7-41b8-a21f-487e6a1529e7",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Забайкальский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_76000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "76000000000"
+    } ]
+  }, {
+    "uid" : "da923d73-f159-410e-8675-4165e72925c0",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Саха (Якутия)"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_98000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "98000000000"
+    } ]
+  }, {
+    "uid" : "1ae8d03e-92c7-42ee-a23e-a6fb9e27797c",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Амурская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_10000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "10000000000"
+    } ]
+  }, {
+    "uid" : "0fee8ec6-6586-4467-8f57-1d6106d41f36",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Коми"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_87000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "87000000000"
+    } ]
+  }, {
+    "uid" : "01b9e049-db02-4d53-8093-ea14b2d15ac9",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Омская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_52000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "52000000000"
+    } ]
+  }, {
+    "uid" : "c5dbcbab-bff5-4751-a112-86fa4b64ab51",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Хабаровский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_08000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "08000000000"
+    } ]
+  }, {
+    "uid" : "e8c16a59-4b4e-4304-9421-ccffe318538f",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Белгородская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_14000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "14000000000"
+    } ]
+  }, {
+    "uid" : "9328fc1a-3d2a-4f76-8e79-5bf0bdceb8ed",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Севастополь"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_67000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "67000000000"
+    } ]
+  }, {
+    "uid" : "b99ab4a0-a3ad-4c8d-9fac-30033c2861d8",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Костромская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_34000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "34000000000"
+    } ]
+  }, {
+    "uid" : "7cb62ac5-6754-4d6a-a8be-cb49d087f635",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Тюменская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_71000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "71000000000"
+    } ]
+  }, {
+    "uid" : "b00774cb-73e8-4934-bcdc-50db8d1340db",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Еврейская автономная область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_99000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "99000000000"
+    } ]
+  }, {
+    "uid" : "cfa67e58-dc06-49ec-bfac-f096928df862",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Орловская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_54000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "54000000000"
+    } ]
+  }, {
+    "uid" : "ab63c55b-3a15-417c-a556-773537262c79",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Псковская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_58000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "58000000000"
+    } ]
+  }, {
+    "uid" : "424b39ed-cd42-43ce-b917-a4f4bf4a39fb",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Вологодская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_19000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "19000000000"
+    } ]
+  }, {
+    "uid" : "ca1e5866-bc8e-4de2-93b2-4326aac30425",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Иркутская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_25000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "25000000000"
+    } ]
+  }, {
+    "uid" : "0fdd2abc-5435-4d75-8249-35c0aabda92e",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Тульская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_70000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "70000000000"
+    } ]
+  }, {
+    "uid" : "28e86ee4-8437-40df-ac78-3769deb07d90",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Липецкая область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_42000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "42000000000"
+    } ]
+  }, {
+    "uid" : "a84f5c2d-7d15-4b3d-aba4-223e9d23d514",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ленинградская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_41000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "41000000000"
+    } ]
+  }, {
+    "uid" : "d7ca3253-a2e5-4cc6-b835-dc175833b2d8",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Кировская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_33000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "33000000000"
+    } ]
+  }, {
+    "uid" : "98a2a99a-6dfe-48ca-b960-5d247d52f5e9",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Астраханская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_12000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "12000000000"
+    } ]
+  }, {
+    "uid" : "8736b06a-fca4-4908-ab43-42cd918dc54d",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Самарская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_36000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "36000000000"
+    } ]
+  }, {
+    "uid" : "1650e6fa-1ded-4eee-90e8-117b50798961",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Брянская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_15000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "15000000000"
+    } ]
+  }, {
+    "uid" : "4f5501c0-b1b9-4cc5-804d-f55458b69e6d",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Бурятия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_81000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "81000000000"
+    } ]
+  }, {
+    "uid" : "d8e0bc9f-a099-459d-94d3-173d7ed59659",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Марий Эл"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_88000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "88000000000"
+    } ]
+  }, {
+    "uid" : "27cdb53f-a326-46b8-9efa-ff394ee2e747",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Смоленская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_66000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "66000000000"
+    } ]
+  }, {
+    "uid" : "03053950-8116-4e3f-857e-c5e250318d75",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Удмуртская Республика"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_94000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "94000000000"
+    } ]
+  }, {
+    "uid" : "2b871669-17ab-4385-a297-4fc1179538dd",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Ингушетия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_26000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "26000000000"
+    } ]
+  }, {
+    "uid" : "374c657a-d96d-4851-9739-50ddb399a724",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Калмыкия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_85000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "85000000000"
+    } ]
+  }, {
+    "uid" : "6a52d79b-40bd-4b22-8bf8-ea618a85518d",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Крым"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_35000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "35000000000"
+    } ]
+  }, {
+    "uid" : "31c59302-07b3-452a-8a1d-8159ca1c27cb",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Республика Мордовия"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_89000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "89000000000"
+    } ]
+  }, {
+    "uid" : "ce80b27e-fd33-4f5b-98b0-620dc2e73a6a",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Камчатский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_30000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "30000000000"
+    } ]
+  }, {
+    "uid" : "0261eca2-5305-4e62-a69a-b52642d3c1dc",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Новгородская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_49000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "49000000000"
+    } ]
+  }, {
+    "uid" : "ffaa34bd-d7a8-4c27-a7d8-e7786bce270c",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Краснодарский край"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_03000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "03000000000"
+    } ]
+  }, {
+    "uid" : "759bbb99-1f4f-4fca-a0d8-c58d486a5005",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Оренбургская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_53000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "53000000000"
+    } ]
+  }, {
+    "uid" : "96dcd83c-e0b3-43ac-9817-d225478a2ffd",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Москва"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_45000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "45000000000"
+    } ]
+  }, {
+    "uid" : "5896626a-f69b-4e4e-96cf-fe78fde599d2",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Магаданская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_44000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "44000000000"
+    } ]
+  }, {
+    "uid" : "1d8ff67a-ebb8-4f71-8abd-aa009c479809",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Курганская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_37000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "37000000000"
+    } ]
+  }, {
+    "uid" : "a8ce276c-d92b-48fa-aa92-87f35ffe3968",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Ростовская область"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_60000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "60000000000"
+    } ]
+  }, {
+    "uid" : "df112e42-11f2-4289-9964-7046dd671cf2",
+    "attributeValues" : [ {
+      "attributeUid" : "0e9efca0-bd54-4de0-b694-af6a5f381c9c",
+      "value" : "Чукотский автономный округ"
+    }, {
+      "attributeUid" : "5fde107c-2a42-45e3-865a-f6970bbe43e1",
+      "value" : "PGS_MilReg_RegionRF_77000000000"
+    }, {
+      "attributeUid" : "4963c57c-c5fb-43b3-bdda-fa8ff13c0a81",
+      "value" : "77000000000"
+    } ]
+  } ]
+}
+}

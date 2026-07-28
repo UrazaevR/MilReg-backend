@@ -1,0 +1,6 @@
+DROP TYPE IF EXISTS okin_01 CASCADE;
+DROP TYPE IF EXISTS okin_02 CASCADE;
+DROP TYPE IF EXISTS okin_10 CASCADE;
+DROP TYPE IF EXISTS okpdtr CASCADE;
+DROP TYPE IF EXISTS okato CASCADE;
+-- и так далее для всех таблиц, которые создаются

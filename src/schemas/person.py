@@ -4,22 +4,23 @@ import uuid
 from typing import Optional
 
 class PersonBase(BaseModel):
-    surname: str = Field(..., max_length=256, description="Фамилия")
-    name: str = Field(..., max_length=256, description="Имя")
-    middle_name: Optional[str] = Field(None, max_length=256, description="Отчество")
-    birth_day: date = Field(..., description="Дата рождения")
-    sex: Optional[str] = Field(None, max_length=256, description="Пол (OKIN_01)")
-    citizenship: Optional[str] = Field(None, max_length=256, description="Гражданство (OKIN_02)")
-    education_level: str = Field(..., max_length=256, description="Уровень образования (OKIN_30)")
-    main_profession: Optional[str] = Field(None, max_length=256, description="Основная профессия (OKPDTR)")
-    other_profession: Optional[str] = Field(None, max_length=256, description="Другая профессия (OKPDTR)")
-    family_status: Optional[str] = Field(None, max_length=256, description="Семейное положение (OKIN_10)")
-    inn: Optional[str] = Field(None, max_length=256, description="ИНН")
-    inn_issue_date: Optional[date] = Field(None, description="Дата выдачи ИНН")
-    snils: Optional[str] = Field(None, max_length=256, description="СНИЛС")
-    snils_issue_date: Optional[date] = Field(None, description="Дата выдачи СНИЛС")
-    is_training: bool = Field(True, description="Статус обучения (по умолчанию True)")
-    staff_table_id: Optional[uuid.UUID] = Field(None, description="ID штатной единицы")
+    surname: str = Field(..., max_length=256)
+    name: str = Field(..., max_length=256)
+    middle_name: Optional[str] = Field(None, max_length=256)
+    birth_day: date
+    sex_id: Optional[uuid.UUID] = None                     # OKIN_01
+    citizenship_id: Optional[uuid.UUID] = None             # OKIN_02
+    education_level_id: Optional[uuid.UUID] = None         # OKIN_30 (вместо строки)
+    main_profession_id: Optional[uuid.UUID] = None         # ОКПДТР
+    other_profession_id: Optional[uuid.UUID] = None        # ОКПДТР
+    family_status_id: Optional[uuid.UUID] = None           # OKIN_10
+    inn: Optional[str] = Field(None, max_length=256)
+    inn_issue_date: Optional[date] = None
+    snils: Optional[str] = Field(None, max_length=256)
+    snils_issue_date: Optional[date] = None
+    is_training: bool = True
+    okato_id: Optional[uuid.UUID] = None                   # ОКАТО (было region_id)
+    staff_table_id: Optional[uuid.UUID] = None
 
 class PersonCreate(PersonBase):
     pass
