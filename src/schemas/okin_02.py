@@ -1,10 +1,19 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class OIN_02Base(BaseModel):
     code: str
     name: str
     autokey: str
+
+class OIN_02Create(OIN_02Base):
+    pass
+
+class OIN_02Update(BaseModel):
+    code: Optional[str] = None
+    name: Optional[str] = None
+    autokey: Optional[str] = None
 
 class OIN_02Response(OIN_02Base):
     created_at: datetime

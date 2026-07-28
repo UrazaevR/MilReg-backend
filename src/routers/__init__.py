@@ -11,6 +11,7 @@ from .okin_02 import router as okin_02_router
 from .okin_10 import router as okin_10_router
 from .okin_30 import router as okin_30_router
 from .okpdtr import router as okpdtr_router
+from .upload import router as upload_router
 
 __all__ = [
     "department_router",
@@ -27,4 +28,5 @@ __all__ = [
     "okin_10_router",
     "okin_30_router",
     "okpdtr_router",
+    "upload_router"
 ]

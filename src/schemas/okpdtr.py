@@ -12,6 +12,19 @@ class OKPDTRBase(BaseModel):
     code_okz: Optional[str] = None
     autokey: str
 
+class OKPDTRCreate(OKPDTRBase):
+    pass
+
+class OKPDTRUpdate(BaseModel):
+    code: Optional[str] = None
+    kch: Optional[str] = None
+    profession_name: Optional[str] = None
+    job_name: Optional[str] = None
+    code_category: Optional[str] = None
+    code_etks: Optional[str] = None
+    code_okz: Optional[str] = None
+    autokey: Optional[str] = None
+
 class OKPDTRResponse(OKPDTRBase):
     created_at: datetime
     updated_at: datetime | None = None
