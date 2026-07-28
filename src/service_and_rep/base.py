@@ -1,8 +1,7 @@
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
-from typing import TypeVar, Generic, Type, Optional, List
+from sqlalchemy import select, inspect
+from typing import TypeVar, Generic, Type, Optional, List, Any
 from pydantic import BaseModel
-import uuid
 
 ModelType = TypeVar("ModelType")
 CreateSchemaType = TypeVar("CreateSchemaType", bound=BaseModel)
@@ -12,14 +11,16 @@ class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     def __init__(self, model: Type[ModelType], db: AsyncSession):
         self.model = model
         self.db = db
+        # Определяем имя первичного ключа
+        self.pk_name = inspect(model).primary_key[0].name
 
     async def get_all(self) -> List[ModelType]:
         result = await self.db.execute(select(self.model))
         return result.scalars().all()
 
-    async def get_by_id(self, obj_id: uuid.UUID) -> Optional[ModelType]:
+    async def get_by_id(self, obj_id: Any) -> Optional[ModelType]:
         result = await self.db.execute(
-            select(self.model).where(self.model.id == obj_id)
+            select(self.model).where(getattr(self.model, self.pk_name) == obj_id)
         )
         return result.scalar_one_or_none()
 
@@ -30,7 +31,7 @@ class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         await self.db.refresh(instance)
         return instance
 
-    async def update(self, obj_id: uuid.UUID, data: UpdateSchemaType) -> Optional[ModelType]:
+    async def update(self, obj_id: Any, data: UpdateSchemaType) -> Optional[ModelType]:
         instance = await self.get_by_id(obj_id)
         if not instance:
             return None
@@ -40,7 +41,7 @@ class BaseRepository(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         await self.db.refresh(instance)
         return instance
 
-    async def delete(self, obj_id: uuid.UUID) -> bool:
+    async def delete(self, obj_id: Any) -> bool:
         instance = await self.get_by_id(obj_id)
         if not instance:
             return False

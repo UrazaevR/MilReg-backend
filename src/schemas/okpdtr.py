@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 from datetime import datetime
-import uuid
 from typing import Optional
 
 class OKPDTRBase(BaseModel):
@@ -14,7 +13,6 @@ class OKPDTRBase(BaseModel):
     autokey: str
 
 class OKPDTRResponse(OKPDTRBase):
-    id: uuid.UUID
     created_at: datetime
     updated_at: datetime | None = None
 

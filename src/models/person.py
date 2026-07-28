@@ -12,14 +12,14 @@ class Person(Base):
     middle_name = Column(String(256))
     birth_day = Column(Date, nullable=False)
 
-    # Внешние ключи на справочники
-    sex_id = Column(UUID, ForeignKey("okin_01.id", ondelete="SET NULL"), nullable=True)
-    citizenship_id = Column(UUID, ForeignKey("okin_02.id", ondelete="SET NULL"), nullable=True)
-    # src/models/person.py
-    education_level_id = Column(UUID, ForeignKey("okin_30.id", ondelete="SET NULL"), nullable=True)
-    main_profession_id = Column(UUID, ForeignKey("okpdtr.id", ondelete="SET NULL"), nullable=True)
-    other_profession_id = Column(UUID, ForeignKey("okpdtr.id", ondelete="SET NULL"), nullable=True)
-    family_status_id = Column(UUID, ForeignKey("okin_10.id", ondelete="SET NULL"), nullable=True)
+    # Внешние ключи на справочники (теперь строковые)
+    sex_id = Column(String(64), ForeignKey("okin_01.code", ondelete="SET NULL"), nullable=True)
+    citizenship_id = Column(String(64), ForeignKey("okin_02.code", ondelete="SET NULL"), nullable=True)
+    education_level_id = Column(String(64), ForeignKey("okin_30.code", ondelete="SET NULL"), nullable=True)
+    main_profession_id = Column(String(64), ForeignKey("okpdtr.code", ondelete="SET NULL"), nullable=True)
+    other_profession_id = Column(String(64), ForeignKey("okpdtr.code", ondelete="SET NULL"), nullable=True)
+    family_status_id = Column(String(64), ForeignKey("okin_10.code", ondelete="SET NULL"), nullable=True)
+    okato_id = Column(String(64), ForeignKey("okato.code", ondelete="SET NULL"), nullable=True)
 
     inn = Column(String(256))
     inn_issue_date = Column(Date)
@@ -27,7 +27,6 @@ class Person(Base):
     snils_issue_date = Column(Date)
     is_training = Column(Boolean, default=True)
     staff_table_id = Column(UUID, ForeignKey("staffing_table.id", ondelete="SET NULL"))
-    okato_id = Column(UUID, ForeignKey("okato.id", ondelete="SET NULL"), nullable=True)
 
     created_at = Column(DateTime, server_default=func.now())
     updated_at = Column(DateTime, onupdate=func.now())

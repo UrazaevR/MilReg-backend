@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 from datetime import datetime
-import uuid
 
 class OIN_01Base(BaseModel):
     code: str
@@ -8,7 +7,6 @@ class OIN_01Base(BaseModel):
     autokey: str
 
 class OIN_01Response(OIN_01Base):
-    id: uuid.UUID
     created_at: datetime
     updated_at: datetime | None = None
 
