@@ -11,6 +11,7 @@ from .okin_10 import OIN_10Create, OIN_10Update, OIN_10Response
 from .okin_30 import OIN_30Create, OIN_30Update, OIN_30Response
 from .okato import OKATOCreate, OKATOUpdate, OKATOResponse
 from .okpdtr import OKPDTRCreate, OKPDTRUpdate, OKPDTRResponse
+from .menu import MenuButton, MenuList, MenuResponse
 
 __all__ = [
     "DepartmentCreate", "DepartmentUpdate", "DepartmentResponse",
@@ -26,4 +27,5 @@ __all__ = [
     "OIN_30Create", "OIN_30Update", "OIN_30Response",
     "OKATOCreate", "OKATOUpdate", "OKATOResponse",
     "OKPDTRCreate", "OKPDTRUpdate", "OKPDTRResponse",
+    "MenuButton", "MenuList", "MenuResponse",
 ]

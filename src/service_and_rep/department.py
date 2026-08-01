@@ -1,3 +1,4 @@
+from typing import Optional
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.models.department import Department
 from src.schemas.department import DepartmentCreate, DepartmentUpdate

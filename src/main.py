@@ -16,6 +16,7 @@ from src.routers import (
     okpdtr_router,
     okato_router,
     upload_router,
+    menu_router,
 )
 from src.core.database import create_tables, AsyncSessionLocal
 from src.core.load_reference_data import load_okato, load_okin, load_okpdtr
@@ -31,7 +32,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="MilReg API",
-    version="1.0.0",
+    version="0.1.0",
     lifespan=lifespan
 )
 
@@ -59,6 +60,7 @@ app.include_router(okin_30_router)
 app.include_router(okpdtr_router)
 app.include_router(okato_router)
 app.include_router(upload_router)
+app.include_router(menu_router)
 
 @app.get("/")
 async def root():
