@@ -13,6 +13,7 @@ from .okin_30 import router as okin_30_router
 from .okpdtr import router as okpdtr_router
 from .upload import router as upload_router
 from .menu import router as menu_router
+from .metadata import router as meta_router
 
 __all__ = [
     "department_router",
@@ -30,5 +31,6 @@ __all__ = [
     "okin_30_router",
     "okpdtr_router",
     "upload_router",
-    "menu_router"
+    "menu_router",
+    "meta_router",
 ]

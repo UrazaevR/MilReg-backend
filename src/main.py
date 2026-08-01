@@ -17,6 +17,7 @@ from src.routers import (
     okato_router,
     upload_router,
     menu_router,
+    meta_router,
 )
 from src.core.database import create_tables, AsyncSessionLocal
 from src.core.load_reference_data import load_okato, load_okin, load_okpdtr
@@ -61,6 +62,7 @@ app.include_router(okpdtr_router)
 app.include_router(okato_router)
 app.include_router(upload_router)
 app.include_router(menu_router)
+app.include_router(meta_router)
 
 @app.get("/")
 async def root():
