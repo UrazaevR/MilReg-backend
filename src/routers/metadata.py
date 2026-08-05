@@ -9,12 +9,21 @@ async def get_meta(page: str):
         case "persons":
             data = ListListMeta(type='list',
                 value=[
-                    ListCellMeta(type='string', value='id')
+                    ListCellMeta(type='string', value='id'),
+                    ListListMeta(type='list', value=[
+                        ListCellMeta(type='string', value='fio', dataEndpoint='api/persons/{id}'),
+                        ListCellMeta(type='date', value='birth_day')
+                    ]),
+                    ListListMeta(type='list', value=[
+                        ListCellMeta(type='string', value='main_profession_id'),
+                        ListCellMeta(type='string', value='other_profession_id')
+                    ]),
+                    ListCellMeta(type='boolean', value='is_training')
                 ]
             )
+            return data
         case _:
             raise HTTPException(status_code=status.HTTP_418_IM_A_TEAPOT, detail='Я чайник, остальное в разработке')
-    data = {}
-    return data
+    
 
     

@@ -25,7 +25,7 @@ async def get_menu():
                     title="Общий учёт",
                     type="button",
                     metaEndpoint="api/meta/persons",
-                    dataEndpoint="api/persons"
+                    dataEndpoint="api/persons/list"
                 ),
                 MenuButton(
                     id="staffing",
