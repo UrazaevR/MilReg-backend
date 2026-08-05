@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, status, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.core.database import get_db
 from src.service_and_rep.person import PersonRepository
-from src.schemas.person import PersonCreate, PersonUpdate, PersonResponse
+from src.schemas.person import PersonCreate, PersonUpdate, PersonResponse, PersonForListResponse
 import uuid
 
 router = APIRouter(prefix="/api/persons", tags=["persons"])
@@ -11,6 +11,11 @@ router = APIRouter(prefix="/api/persons", tags=["persons"])
 async def get_all_persons(db: AsyncSession = Depends(get_db)):
     repo = PersonRepository(db)
     return await repo.get_all()
+
+@router.get("/list", response_model=list[PersonForListResponse])
+async def get_list_of_persons(db: AsyncSession = Depends(get_db)):
+    repo = PersonRepository(db)
+    return await repo.get_for_list()
 
 @router.get("/{person_id}", response_model=PersonResponse)
 async def get_person(person_id: uuid.UUID, db: AsyncSession = Depends(get_db)):

@@ -4,7 +4,7 @@ from src.core.database import get_db
 from src.service_and_rep.okin_30 import OIN_30Repository
 from src.schemas.okin_30 import OIN_30Response
 
-router = APIRouter(prefix="/api/okin-30", tags=["Справочник: Пол (OKIN_30)"])
+router = APIRouter(prefix="/api/okin-30", tags=["Справочник: Уровень образования (OKIN_30)"])
 
 @router.get("/", response_model=list[OIN_30Response])
 async def get_all(db: AsyncSession = Depends(get_db)):

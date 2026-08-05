@@ -35,3 +35,14 @@ class PersonResponse(PersonBase):
 
     class Config:
         from_attributes = True
+
+class PersonForListResponse(BaseModel):
+    id: uuid.UUID
+    fio: str
+    birth_day: date
+    main_profession_id: Optional[str] = None
+    other_profession_id: Optional[str] = None
+    is_training: Optional[bool] = True
+
+    class Config:
+        from_attributes = True

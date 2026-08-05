@@ -32,3 +32,19 @@ class PersonRepository(BaseRepository[Person, PersonCreate, PersonUpdate]):
         stmt = select(Person).where(Person.staff_table_id.in_(staffing_ids))
         result = await self.db.execute(stmt)
         return result.scalars().all()
+
+    async def get_for_list(self):
+        persons = await self.get_all()
+        answer = []
+        for person in persons:
+            answer.append(
+                {
+                    "id": person.id, 
+                    "fio": person.surname + ' ' + person.name + (' ' + person.middle_name) if person.middle_name else '',
+                    "birth_day": person.birth_day,
+                    "main_profession_id": person.main_profession_id,
+                    "other_profession_id": person.other_profession_id,
+                    "is_training": person.is_training
+                }
+            )
+        return answer
